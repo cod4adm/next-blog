@@ -1,0 +1,51 @@
+$textColor: hsla(0, 0%, 100%, .85);
+$bgColor: #313b3f;
+
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  height: 60px;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: #15171a;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1000;
+
+  a {
+    margin-right: 30px;
+    color: $textColor;
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  height: auto;
+  min-height: calc(100vh - 60px);
+  margin-top: 60px;
+  padding: 2rem;
+  background: $bgColor;
+  color: $textColor;
+}
+
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
